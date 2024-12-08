@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import { HiOutlinePhone } from 'react-icons/hi'
 import { IoCartOutline, IoHeartOutline, IoSearch } from 'react-icons/io5'
 
 const Upperheader = () => {
