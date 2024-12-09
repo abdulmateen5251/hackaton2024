@@ -17,9 +17,6 @@ import Navbar from './component/Navbar'
 
 
 
-
-
-
 function page() {
   return (
     <div>

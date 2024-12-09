@@ -25,7 +25,7 @@ import Cart2 from '../component/Cart2';
         <div className="flex items-center space-x-6">
           
             <FaPhoneAlt className="mr-2" />
-            (225) 555-0118
+            +923152983545
           
          
             <FaEnvelope className="mr-2" />
