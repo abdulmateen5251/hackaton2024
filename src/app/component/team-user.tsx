@@ -2,11 +2,18 @@ import React from 'react';
 import Image from 'next/image';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 
-const BlogSection = () => {
+const Team = () => {
   const teamMembers = [
-    { id: 1, image: '/pic1.jpg', alt: 'Team Member 1' },
-    { id: 2, image: '/pic2.jpg', alt: 'Team Member 2' },
-    { id: 3, image: '/pic3.jpg', alt: 'Team Member 3' },
+    { id: 1, image: '/user1.jpg', alt: 'Team Member 1' },
+    { id: 2, image: '/user2.jpg', alt: 'Team Member 2' },
+    { id: 3, image: '/user3.jpg', alt: 'Team Member 3' },
+    { id: 4, image: '/user4.jpg', alt: 'Team Member 4' },
+    { id: 5, image: '/user5.jpg', alt: 'Team Member 5' },
+    { id: 6, image: '/user6.jpg', alt: 'Team Member 6' },
+    { id: 7, image: '/user7.jpg', alt: 'Team Member 7' },
+    { id: 8, image: '/user8.jpg', alt: 'Team Member 8' },
+    { id: 9, image: '/user9.jpg', alt: 'Team Member 9' },
+    
   ];
 
   return (
@@ -52,4 +59,4 @@ const BlogSection = () => {
   );
 };
 
-export default BlogSection;
+export default Team;

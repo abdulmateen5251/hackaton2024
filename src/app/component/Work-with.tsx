@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const Work = () => {
   return (
-    <section className="w-[1440px] h-[636] bg-[#2A7CC7] ">
+    <section className="w-auto h-[636] bg-[#2A7CC7] ">
       <div className="container px-5 py-24 mx-auto">
         <div className="lg:w-4/5 mx-auto flex flex-wrap">
           {/* Product Information */}

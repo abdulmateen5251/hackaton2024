@@ -1,6 +1,10 @@
 'use client'
 
-import React from 'react'
+import React from 'react';
+import ProductCard from '../component/addtocart';
+import ProductDescription from '../component/d-product';
+import Header from '../component/Header'
+import Link from 'next/link'
 import {
   FaFacebookF,
   FaTwitter,
@@ -9,16 +13,13 @@ import {
   FaEnvelope,
 } from 'react-icons/fa'
 
-import Header from '../component/Header'
-import Link from 'next/link'
-import ImageGallery from '../component/ImageGallery'
-import Logos from '../component/Logos'
-import Cart2 from '../component/productlist-card2'
+import BESTSELLER from '../component/BESTSELLER-PRODUCTS';
 
-const Page: React.FC = () => {
+
+const ProductPage = () => {
   return (
-    <div>
-      {/* Top bar */}
+  <>
+     {/* Top bar */}
      <div className='bg-[#23856D] '>
      <div className="flex flex-col md:flex-row items-start md:items-center justify-between md:h-12 max-w-[1230px] mx-auto text-white  p-4 md:p-0">
         {/* Contact Information with Icons */}
@@ -56,9 +57,10 @@ const Page: React.FC = () => {
         <div className="max-w-[1049px] mx-auto px-4">
           <div className="h-[44px] flex justify-between items-center">
             {/* Logo/Title */}
-            <div className="text-xl md:text-2xl text-[#252B42] font-bold">
+            <Link href="/"><div className="text-xl md:text-2xl text-[#252B42] font-bold">
               Shops
             </div>
+            </Link>
 
             {/* Navigation */}
             <div className="flex items-center space-x-4 md:space-x-6">
@@ -83,12 +85,18 @@ const Page: React.FC = () => {
         </div>
       </div>
 
-      {/* Content Sections */}
-      <ImageGallery />
-      <Logos />
-      <Cart2 />
-    </div>
-  )
-}
 
-export default Page
+
+    <main className="min-h-screen bg-[#FAFAFA]">
+      <div className="container mx-auto py-8">
+        <ProductCard />
+        <ProductDescription />
+       
+        <BESTSELLER/>
+      </div>
+    </main>
+    </>
+  );
+};
+
+export default ProductPage;

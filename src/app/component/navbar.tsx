@@ -10,7 +10,7 @@ import {
 
 const Navbar: React.FC = () => {
   return (
-    <div className="flex items-center justify-between h-12 w-full bg-black px-5">
+    <div className="flex items-center justify-between h-12 w-auto bg-black px-5  ">
       {/* Contact Information with Icons */}
       <div className="flex items-center space-x-6">
         <Link href="tel:+12255550118" passHref>
@@ -35,6 +35,7 @@ const Navbar: React.FC = () => {
 
       {/* Social Media Icons */}
       <div className="flex items-center space-x-4">
+      
         <Link href="#" passHref>
           <div aria-label="Facebook" className="text-white hover:text-gray-400">
             <FaFacebookF />

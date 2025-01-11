@@ -29,10 +29,10 @@ const About: React.FC = () => {
             <Link href="/Product-list" className="font-semibold hover:text-gray-900">
               Product
             </Link>
-            <Link href="#" className="mr-5 font-bold hover:text-gray-900">
+            <Link href="/pricing" className="mr-5 font-bold hover:text-gray-900">
               Pricing
             </Link>
-            <Link href="#" className="mr-5 font-bold hover:text-gray-900">
+            <Link href="/Contact" className="mr-5 font-bold hover:text-gray-900">
               Contact
             </Link>
           </nav>

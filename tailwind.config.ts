@@ -14,6 +14,18 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      // You can rename or create completely new breakpoints:
+      'x': '0px',
+      'xs': '480px',
+      'sm': '640px',      // default 'sm'
+      'md': '768px',      // default 'md'
+      'lg': '1024px',     // default 'lg'
+      'xl': '1280px',     // default 'xl'
+      '2xl': '1536px',    // default '2xl'
+      // or add any other custom ones:
+      '3xl': '1600px',
+    },
     extend: {
       fontFamily: {
         // Add your custom font
