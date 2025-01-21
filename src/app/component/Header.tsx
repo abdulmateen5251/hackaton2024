@@ -47,7 +47,7 @@ function Header() {
           <Link href="/About" className="mr-5 font-bold hover:text-gray-900">
             About
           </Link>
-          <Link href="#" className="mr-5 font-bold hover:text-gray-900">
+          <Link href="/blog" className="mr-5 font-bold hover:text-gray-900">
             Blog
           </Link>
           <Link href="/Contact" className="mr-5 font-bold hover:text-gray-900">
