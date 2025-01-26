@@ -1,14 +1,12 @@
-'use client'
+"use client";
 
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
-import Link from 'next/link'; 
-import BlogSection from '../component/Pic-galary';
-import Logos from '../component/Logos';
-import Work from '../component/Work-with';
-
-
+import Link from "next/link";
+import BlogSection from "../component/Pic-galary";
+import Logos from "../component/Logos";
+import Work from "../component/Work-with";
 
 const About: React.FC = () => {
   return (
@@ -17,7 +15,10 @@ const About: React.FC = () => {
       <header className="text-gray-600 body-font">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           {/* Logo */}
-          <Link href="/" className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <Link
+            href="/"
+            className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+          >
             <span className="ml-3 text-[#252B42] text-2xl">Bandage</span>
           </Link>
 
@@ -26,13 +27,22 @@ const About: React.FC = () => {
             <Link href="/" className="mr-5 font-bold hover:text-gray-900">
               Home
             </Link>
-            <Link href="/Product-list" className="font-semibold hover:text-gray-900">
+            <Link
+              href="/Product-list"
+              className="font-semibold hover:text-gray-900"
+            >
               Product
             </Link>
-            <Link href="/pricing" className="mr-5 font-bold hover:text-gray-900">
+            <Link
+              href="/pricing"
+              className="mr-5 font-bold hover:text-gray-900"
+            >
               Pricing
             </Link>
-            <Link href="/Contact" className="mr-5 font-bold hover:text-gray-900">
+            <Link
+              href="/Contact"
+              className="mr-5 font-bold hover:text-gray-900"
+            >
               Contact
             </Link>
           </nav>
@@ -50,7 +60,6 @@ const About: React.FC = () => {
           </Link>
         </div>
       </header>
-
       {/* About Section */}
       <section className="py-24 w-full max-w-7xl mx-auto">
         <div className="w-full flex flex-col lg:flex-row justify-start items-center gap-8">
@@ -64,7 +73,8 @@ const About: React.FC = () => {
                 ABOUT US
               </h2>
               <p className="text-[#737373] text-base font-normal leading-relaxed">
-                We know how large objects will act,<br />
+                We know how large objects will act,
+                <br />
                 but things on a small scale
               </p>
             </div>
@@ -89,23 +99,25 @@ const About: React.FC = () => {
           </div>
         </div>
       </section>
-
       {/* Problems Section */}
       <section className="w-full bg-white flex justify-center items-center py-12">
         <div className="w-full max-w-7xl flex flex-col md:flex-row justify-between items-start border border-transparent">
           {/* Text Content */}
           <div className="flex-1">
-            <h1 className='text-left text-2xl font-bold mt-6 text-[#252B42]'>
-              <span className='mb-4 text-[#E74040] font-medium block'>Problems trying</span>
-              Met minim Mollie non desert <br /> Alamo est sit cliquey dolor do <br /> met sent.
+            <h1 className="text-left text-2xl font-bold mt-6 text-[#252B42]">
+              <span className="mb-4 text-[#E74040] font-medium block">
+                Problems trying
+              </span>
+              Met minim Mollie non desert <br /> Alamo est sit cliquey dolor do{" "}
+              <br /> met sent.
             </h1>
-            <p className='text-[#737373] mt-4'>
-              Problems trying to resolve the conflict between the two major realms of <br /> Classical physics: Newtonian mechanics 
+            <p className="text-[#737373] mt-4">
+              Problems trying to resolve the conflict between the two major
+              realms of <br /> Classical physics: Newtonian mechanics
             </p>
           </div>
         </div>
       </section>
-
       {/* Categories Section */}
       <section className="w-full py-16 bg-white">
         <div className="container mx-auto flex justify-center">
@@ -114,7 +126,9 @@ const About: React.FC = () => {
             <div className="w-56 h-40 bg-white border border-transparent rounded-lg shadow-lg">
               <div className="h-full px-8 pt-16 pb-24 flex flex-col justify-center items-center">
                 <h1 className="font-bold text-5xl text-[#252B42] mb-3">15K</h1>
-                <p className="leading-relaxed text-[#737373]">Happy Customers</p>
+                <p className="leading-relaxed text-[#737373]">
+                  Happy Customers
+                </p>
               </div>
             </div>
 
@@ -122,7 +136,9 @@ const About: React.FC = () => {
             <div className="w-56 h-40 bg-white border border-transparent rounded-lg shadow-lg">
               <div className="h-full px-8 pt-16 pb-24 flex flex-col justify-center items-center">
                 <h1 className="font-bold text-5xl text-[#252B42] mb-3">150K</h1>
-                <p className="leading-relaxed text-[#737373]">Monthly Visitors</p>
+                <p className="leading-relaxed text-[#737373]">
+                  Monthly Visitors
+                </p>
               </div>
             </div>
 
@@ -130,7 +146,9 @@ const About: React.FC = () => {
             <div className="w-56 h-40 bg-white border border-transparent rounded-lg shadow-lg">
               <div className="h-full px-8 pt-16 pb-24 flex flex-col justify-center items-center">
                 <h1 className="font-bold text-5xl text-[#252B42] mb-3">15</h1>
-                <p className="leading-relaxed text-[#737373]">Countries Worldwide</p>
+                <p className="leading-relaxed text-[#737373]">
+                  Countries Worldwide
+                </p>
               </div>
             </div>
 
@@ -144,7 +162,6 @@ const About: React.FC = () => {
           </div>
         </div>
       </section>
-
       {/* Video Section */}
       <section className="w-full py-24 bg-white">
         <div className="container mx-auto flex justify-center">
@@ -159,24 +176,23 @@ const About: React.FC = () => {
           </div>
         </div>
       </section>
-
       {/* Blog Section */}
       <section className="w-full bg-white py-24">
         <BlogSection />
       </section>
-
-      {/* Meet Our Team Section */}
+      -{/* Meet Our Team Section */}
       <section className="w-full py-16 bg-white">
         <div className="w-full max-w-3xl mx-auto text-center">
-          <h2 className="font-bold text-[#252B42] text-4xl mb-4">Meet Our Team</h2>
+          <h2 className="font-bold text-[#252B42] text-4xl mb-4">
+            Meet Our Team
+          </h2>
           <p className="text-[14px] font-semibold text-[#737373]">
-            Problems trying to resolve the conflict between <br/>
-            the two major realms of Classical physics: Newtonian mechanics 
+            Problems trying to resolve the conflict between <br />
+            the two major realms of Classical physics: Newtonian mechanics
           </p>
         </div>
         <Logos />
       </section>
-
       {/* Work With Us Section */}
       <section className="w-full py-24 bg-white">
         <Work />
