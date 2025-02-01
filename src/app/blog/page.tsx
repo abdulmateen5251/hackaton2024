@@ -5,8 +5,6 @@ import Image from "next/image";
 
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
-import Header from "../component/Header";
-
 
 interface Product {
   _id: string;
@@ -60,10 +58,6 @@ const Shop: React.FC = () => {
     description.length > 100 ? `${description.substring(0, 100)}...` : description;
 
   return (
-<>
-
-<Header/>
-
     <div className="p-4">
       <h2 className="text-center text-slate-800 mt-4 mb-4">Products From APIs Data</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -142,9 +136,7 @@ const Shop: React.FC = () => {
         )}
       </div>
     </div>
-    </>
   );
-  
 };
 
 export default Shop;
